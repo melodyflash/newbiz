@@ -1,0 +1,23 @@
+/* Shared styles */
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* Button styles */
+.btn-primary {
+    @apply bg-purple-600 hover:bg-purple-700 text-white font-semibold py-3 px-8 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-purple-500/30;
+}
+
+.btn-secondary {
+    @apply bg-transparent border-2 border-purple-400 hover:bg-purple-900/30 text-white font-semibold py-3 px-8 rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-purple-500/20;
+}
+
+/* Card hover effect */
+.card-hover {
+    @apply bg-gray-800/50 p-8 rounded-xl transition-all duration-500 hover:bg-gray-700/50 hover:-translate-y-2 border border-gray-700 hover:border-purple-400/30;
+}
+
+/* Text selection */
+::selection {
+    @apply bg-purple-600 text-white;
+}
