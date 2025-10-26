@@ -94,10 +94,10 @@ class CustomFooter extends HTMLElement {
           <div class="footer-links-col">
             <h3 class="footer-heading">Quick Links</h3>
             <div class="footer-links">
-              <a href="/">Home</a>
-              <a href="/about.html">About Us</a>
-              <a href="/services.html">Services</a>
-              <a href="/contact.html">Contact</a>
+              <a href="/newbiz/">Home</a>
+              <a href="/newbiz/about.html">About Us</a>
+              <a href="/newbiz/services.html">Services</a>
+              <a href="/newbiz/contact.html">Contact</a>
             </div>
           </div>
           
