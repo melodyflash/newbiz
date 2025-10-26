@@ -87,7 +87,7 @@ class CustomNavbar extends HTMLElement {
         }
       </style>
       <nav>
-        <a href="/" class="logo">
+        <a href="/newbiz/" class="logo">
           Smart Biz <span>Upgrades</span>
         </a>
         
