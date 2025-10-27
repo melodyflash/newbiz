@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import { Mail, Linkedin, Instagram, Github } from 'lucide-react';
 
 const Footer = () => {
@@ -35,12 +34,6 @@ const Footer = () => {
               <Mail size={20} />
               Email Us
             </a>
-            <Link
-              to="/downloads"
-              className="btn-ghost mt-3 inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-wide"
-            >
-              Explore Downloads
-            </Link>
           </div>
         </div>
         <p className="mt-12 border-t border-cyan-500/20 pt-6 text-center text-xs text-cyan-200/60">

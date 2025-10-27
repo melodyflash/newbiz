@@ -45,19 +45,49 @@ src/
 - **Wave buttons**: slim pill-shaped CTAs with a left-to-right shimmer on hover.
 - **Glowing cards**: glassmorphism panels with animated edge highlights and micro-icons.
 - **Animated tech background**: moving grid, gradient orbs, and floating particles rendered once in the layout.
-- **Download center**: `/downloads` route lists every key component with one-click raw file downloads.
+- **Lean routing**: Home, Services, and Contact pages share the same animated layout and navigation shell.
 
-## Downloading Files
+## Downloading or Sharing the Source
 
-Visit `http://localhost:5173/downloads` (or the production equivalent) to grab individual source files. Each card
-displays the relative path, line count, and file size; hitting **Download** streams the current file contents as a
-plain-text attachment that you can archive locally.
+Need an archive you can move around or push to GitHub? Run the export script from the project root:
+
+```bash
+npm run export
+```
+
+The command produces `smart-biz-upgrade-source.tar.gz` in the root directory with the current source (excluding
+`node_modules`, build output, and the Git metadata). Copy that archive to any machine where you want to work on the
+project, then unpack it with:
+
+```bash
+tar -xzf smart-biz-upgrade-source.tar.gz
+```
+
+To host the project in your own GitHub repository:
+
+1. [Create a new empty repository](https://github.com/new).
+2. Initialize Git (if you are working from the exported archive):
+   ```bash
+   git init
+   git add .
+   git commit -m "Initial commit"
+   ```
+3. Add your GitHub remote and push:
+   ```bash
+   git remote add origin git@github.com:<your-username>/<your-repo>.git
+   git branch -M main
+   git push -u origin main
+   ```
+
+You can now clone from GitHub or download the ZIP GitHub automatically generates on the repository page to compile the
+project anywhere.
 
 ## Available Scripts
 
 - `npm run dev` – Start Vite in development mode.
 - `npm run build` – Build the site for production.
 - `npm run preview` – Preview the built assets locally.
+- `npm run export` – Create a compressed archive of the current source tree for sharing.
 
 ## License
 

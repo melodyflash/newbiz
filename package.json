@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "export": "tar -czf smart-biz-upgrade-source.tar.gz --exclude='node_modules' --exclude='dist' --exclude='.git' --exclude='smart-biz-upgrade-source.tar.gz' ."
   },
   "dependencies": {
     "lucide-react": "^0.397.0",
