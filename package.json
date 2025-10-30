@@ -1,0 +1,27 @@
+{
+  "name": "newbiz",
+  "version": "0.2.0",
+  "private": true,
+  "workspaces": [
+    "versions/neon-sapphire",
+    "versions/circuit-glow",
+    "versions/quantum-ember",
+    "versions/stellar-violet"
+  ],
+  "scripts": {
+    "dev:neon": "npm run dev --workspace neon-sapphire",
+    "dev:circuit": "npm run dev --workspace circuit-glow",
+    "dev:ember": "npm run dev --workspace quantum-ember",
+    "dev:stellar": "npm run dev --workspace stellar-violet",
+    "build:neon": "npm run build --workspace neon-sapphire",
+    "build:circuit": "npm run build --workspace circuit-glow",
+    "build:ember": "npm run build --workspace quantum-ember",
+    "build:stellar": "npm run build --workspace stellar-violet",
+    "build:all": "npm run build --workspaces",
+    "preview:neon": "npm run preview --workspace neon-sapphire",
+    "preview:circuit": "npm run preview --workspace circuit-glow",
+    "preview:ember": "npm run preview --workspace quantum-ember",
+    "preview:stellar": "npm run preview --workspace stellar-violet",
+    "export": "tar -czf smart-biz-upgrade-source.tar.gz --exclude='**/node_modules' --exclude='**/dist' --exclude='.git' --exclude='smart-biz-upgrade-source.tar.gz' ."
+  }
+}
